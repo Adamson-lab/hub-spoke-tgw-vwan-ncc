@@ -1,0 +1,10 @@
+{
+  "hub_id": "vwan-hub-eastus",
+  "fabric": "azure-vwan",
+  "region": "eastus",
+  "cidr_summary": "10.20.0.0/16",
+  "spokes": [
+    {"spoke_id": "vnet-app-core", "cidr": "10.20.1.0/24", "zone": "prod", "transit_enabled": false},
+    {"spoke_id": "vnet-firewall-hub", "cidr": "10.20.2.0/24", "zone": "shared", "transit_enabled": true}
+  ]
+}

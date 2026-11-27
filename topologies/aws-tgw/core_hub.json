@@ -1,0 +1,10 @@
+{
+  "hub_id": "tgw-core-use1",
+  "fabric": "aws-tgw",
+  "region": "us-east-1",
+  "cidr_summary": "10.10.0.0/16",
+  "spokes": [
+    {"spoke_id": "vpc-prod-payments", "cidr": "10.10.1.0/24", "zone": "prod", "transit_enabled": false},
+    {"spoke_id": "vpc-shared-ingress", "cidr": "10.10.2.0/24", "zone": "shared", "transit_enabled": true}
+  ]
+}
